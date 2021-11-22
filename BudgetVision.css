@@ -1,0 +1,124 @@
+body{
+    background-image:linear-gradient(aquamarine,lightgrey);
+    border-top-color: ghostwhite;
+}
+
+textarea{
+    resize:none;
+}
+
+.navigation{
+    background-color: darkred;
+    overflow: hidden;
+
+    /*Adding the minimum width to be maximized to prevent the navigation bar from moving when the browser window is resized.*/
+    min-width: max-content;
+}
+
+.navigation ul{
+    /*Removing the bullet points from the unordered list*/
+    list-style-type:none;
+
+    /*Removing padding and margins from the unordered list*/
+    margin: 0px;
+    padding: 0px;
+
+    /*Centering the unordered list*/
+    text-align: center;
+}
+
+.navigation li{
+    /* The inline block is used for the list items in navigation to make the items display horizontally, not vertically.*/
+    display: inline-block;
+}
+
+.navigation a{
+    color:whitesmoke;
+    cursor: pointer;
+
+    /*padding to seperate the list items*/
+    padding: 15px;
+
+    display: block;
+    
+    /*Removing the underlines from the links*/
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    background-color: lightcoral;
+    color:whitesmoke;
+    /*hover tansition for a second*/
+    transition:1s;
+}
+
+
+#question_and_answer_div{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    color:black;
+}
+
+.contact_information_div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:green;
+
+}
+
+.terms_and_conditions_div{
+
+    /*
+     *The flex keyword is used to display the div as a vertical expansion box.
+     *The direction of the flex is coloumn wise.
+     *The items are then aligned center.
+     */
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+
+    color:black;
+}
+
+.terms_and_conditions_div ol{
+    color:black;
+}
+
+.about_the_author_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#budget_vision_logo_div
+{
+    background-color:rgb(69, 205, 161);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h2{
+    color: firebrick;
+    text-align: center;
+}
+
+.why_download_div figure{
+    
+    display: inline-block;
+    margin: 25px;
+}
+
+.why_download_div figcaption{
+    text-align: center;
+}
+
+.why_download_div img{
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering:optimizeQuality;
+}
+
