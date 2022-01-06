@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script src="BudgetVision.js"></script>
 <head>
     <link rel="BudgetVision stylesheet" href="BudgetVision.css">
 </head>
@@ -103,18 +104,21 @@
     </div>
     <hr>
 
-
     <h2><u>Any Questions or Feedback ?</u></h2>
-    <pre><b>First Name:</b> <textarea id="first name" rows="1" cols="15"> </textarea> </pre>
-    <pre><b>Last Name:</b> <textarea id="last name" rows="1" cols="15"> </textarea> </pre>
-    <pre><b>Email Subject:</b> <textarea id="first name" rows="1" cols="25"> </textarea> </pre>
+    <br>
+    <b>First Name:</b> <textarea id="first name" rows="1" cols="15"> </textarea>
+    <br>
+    <b>Last Name:</b> <textarea id="last name" rows="1" cols="15"> </textarea>
+    <br>
+    <b>Email Subject:</b> <textarea id="email subject" rows="1" cols="25"> </textarea>
+    <br>
 
     <div class="contact_information_div">
             <!-- Anchor to be used to define this contact information paragraph to be used in hyperlink in the navigation-->
             <a id="feedback"></a>
-            <textarea class="Contact Me" placeholder="Write your questions or feedback here. Inquiries will be answered within 3-5 business days." rows="10" cols="100"></textarea>
+            <textarea id="email content" placeholder="Write your questions or feedback here. Inquiries will be answered within 3-5 business days." rows="10" cols="100"></textarea>
             <br><br>
-            <button type="button">Send Email</button>
+            <button id="email button" onclick="sendEmailFunction();" type="button">Send Email</button>
     </div>
     <hr>
 
